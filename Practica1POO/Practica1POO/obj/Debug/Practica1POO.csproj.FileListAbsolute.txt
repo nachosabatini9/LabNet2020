@@ -1,0 +1,7 @@
+D:\LabNet2020\ClasePOO\Practica1POO\Practica1POO\obj\Debug\Practica1POO.csprojAssemblyReference.cache
+D:\LabNet2020\ClasePOO\Practica1POO\Practica1POO\obj\Debug\Practica1POO.csproj.CoreCompileInputs.cache
+D:\LabNet2020\ClasePOO\Practica1POO\Practica1POO\bin\Debug\Practica1POO.exe.config
+D:\LabNet2020\ClasePOO\Practica1POO\Practica1POO\bin\Debug\Practica1POO.exe
+D:\LabNet2020\ClasePOO\Practica1POO\Practica1POO\bin\Debug\Practica1POO.pdb
+D:\LabNet2020\ClasePOO\Practica1POO\Practica1POO\obj\Debug\Practica1POO.exe
+D:\LabNet2020\ClasePOO\Practica1POO\Practica1POO\obj\Debug\Practica1POO.pdb
