@@ -4,3 +4,4 @@ D:\LabNet2020\Practica2\Practica2\bin\Debug\Practica2.pdb
 D:\LabNet2020\Practica2\Practica2\obj\Debug\Practica2.csproj.CoreCompileInputs.cache
 D:\LabNet2020\Practica2\Practica2\obj\Debug\Practica2.exe
 D:\LabNet2020\Practica2\Practica2\obj\Debug\Practica2.pdb
+D:\LabNet2020\Practica2\Practica2\obj\Debug\Practica2.csprojAssemblyReference.cache

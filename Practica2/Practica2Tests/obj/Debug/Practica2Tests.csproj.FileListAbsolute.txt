@@ -1,0 +1,17 @@
+D:\LabNet2020\Practica2\Practica2Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\LabNet2020\Practica2\Practica2Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\LabNet2020\Practica2\Practica2Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\LabNet2020\Practica2\Practica2Tests\bin\Debug\Practica2Tests.dll
+D:\LabNet2020\Practica2\Practica2Tests\bin\Debug\Practica2Tests.pdb
+D:\LabNet2020\Practica2\Practica2Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\LabNet2020\Practica2\Practica2Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\LabNet2020\Practica2\Practica2Tests\bin\Debug\Practica2.exe
+D:\LabNet2020\Practica2\Practica2Tests\bin\Debug\Practica2.pdb
+D:\LabNet2020\Practica2\Practica2Tests\bin\Debug\Practica2.exe.config
+D:\LabNet2020\Practica2\Practica2Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\LabNet2020\Practica2\Practica2Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\LabNet2020\Practica2\Practica2Tests\obj\Debug\Practica2Tests.csprojAssemblyReference.cache
+D:\LabNet2020\Practica2\Practica2Tests\obj\Debug\Practica2Tests.csproj.CoreCompileInputs.cache
+D:\LabNet2020\Practica2\Practica2Tests\obj\Debug\Practica2Tests.csproj.CopyComplete
+D:\LabNet2020\Practica2\Practica2Tests\obj\Debug\Practica2Tests.dll
+D:\LabNet2020\Practica2\Practica2Tests\obj\Debug\Practica2Tests.pdb

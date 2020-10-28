@@ -17,7 +17,7 @@ namespace Practica2.Extensions
             }
             catch (DivideByZeroException ex)
             {
-                Console.WriteLine($"Mensaje de la excepcion: {ex.Message}");
+                throw;
             }
             finally {
                 Console.WriteLine();
