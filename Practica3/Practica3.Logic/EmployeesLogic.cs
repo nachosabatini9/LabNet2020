@@ -10,42 +10,75 @@ using System.Threading.Tasks;
 
 namespace Practica3.Logic
 {
-        public class EmployeesLogic
+        public class EmployeesLogic : BaseLogic,ILogic<Employees>
         {
 
-            private readonly NorthwindContext context;
-
-            public EmployeesLogic()
+            public List<Employees> GetAll()
             {
-                this.context = new NorthwindContext();
+                return context.Employees.ToList();
             }
 
-            public void Employees(int ID)
+            public Employees GetOne(int id)
             {
-            try
+                try
+                {
+                    return context.Employees.First(r => r.EmployeeID.Equals(id));
+                }
+                catch {
+                    throw new CustomException("Empleado Inexistente");
+                }
+
+            }
+
+            public void Insert(Employees entity)
             {
-                var employee = RetrieveEmployee(ID);
-                Console.WriteLine($"ID Empleado:{employee.EmployeeID}, Nombre Completo: {employee.FirstName} {employee.LastName}, Ciudad:{employee.City}");
+                try
+                {
+                    int ultimoId = (from emp in context.Employees
+                                    orderby emp.EmployeeID descending
+                                    select emp.EmployeeID).FirstOrDefault();
+
+                    //entity.EmployeeID = ++ultimoId;
+
+                    Employees nuevoEmpleado = context.Employees.Add(entity);
+                    context.SaveChanges();
+                }
+                catch {
+                    throw new CustomException("Error al Crear nuevo Empleado");
+                }
+
 
             }
-            catch (Exception ex) {
-                Console.WriteLine(ex.Message);
-            }
-            }
-        
-            private Employees RetrieveEmployee(int ID) {
 
-                    try
-                    {
-                        return context.Employees.First(r => r.EmployeeID.Equals(ID));
-                    }
-                    catch (Exception ex)
-                    {
-                        throw new Exception("Empleado inexistente");
-                    }
-            }
-    
+            public void Update(Employees entity)
+            {
+                try
+                {
+                    Employees empleadoAEditar = GetOne(entity.EmployeeID);
+                    empleadoAEditar.City = entity.City;
+                    empleadoAEditar.Country = entity.Country;
+                    empleadoAEditar.PostalCode = entity.PostalCode;
+                    context.SaveChanges();
+                }
+                catch {
+                    throw new CustomException("Error al actualizar Empleado");
+                }
 
-      }
+            }
+            public void Delete(int id)
+            {
+                try
+                {
+                    Employees empleadoAEliminar = GetOne(id);
+                    context.Employees.Remove(empleadoAEliminar);
+                    context.SaveChanges();
+                }
+                catch {
+                throw new CustomException("Error al eliminar Empleado");
+            }
+
+            }
+
+        }
 }
 

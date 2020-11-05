@@ -8,26 +8,31 @@ using System.Threading.Tasks;
 
 namespace Practica3.Logic
 {
-    public class TerritoriesLogic
+    public class TerritoriesLogic : BaseLogic, ILogic<Territories>
     {
-        private readonly NorthwindContext context;
-
-        public TerritoriesLogic(){
-
-            this.context = new NorthwindContext();
-        }
-        public void AllTerritories() {
-
-            var territories = getAllTerritories();
-            foreach (var t in territories)
-            {
-                Console.WriteLine($"ID Territorio: {t.TerritoryID} , Descripcion: {t.TerritoryDescription}");
-            }
+        public void Delete(int id)
+        {
+            throw new NotImplementedException();
         }
 
-
-        private List<Territories> getAllTerritories() {
+        public List<Territories> GetAll()
+        {
             return context.Territories.ToList();
+        }
+
+        public Territories GetOne(int id)
+        {
+            return context.Territories.First(r => r.TerritoryID.Equals(id));
+        }
+
+        public void Insert(Territories entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(Territories entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }
