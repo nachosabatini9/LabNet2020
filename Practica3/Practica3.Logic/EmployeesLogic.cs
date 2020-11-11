@@ -55,9 +55,11 @@ namespace Practica3.Logic
                 try
                 {
                     Employees empleadoAEditar = GetOne(entity.EmployeeID);
+                    empleadoAEditar.FirstName = entity.FirstName;
+                    empleadoAEditar.LastName = entity.LastName;
                     empleadoAEditar.City = entity.City;
                     empleadoAEditar.Country = entity.Country;
-                    empleadoAEditar.PostalCode = entity.PostalCode;
+                    //empleadoAEditar.PostalCode = entity.PostalCode;
                     context.SaveChanges();
                 }
                 catch {

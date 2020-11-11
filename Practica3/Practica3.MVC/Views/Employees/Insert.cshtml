@@ -1,0 +1,21 @@
+﻿@model  Practica3.MVC.Models.EmployeesView
+@{
+    ViewBag.Title = "Agregar Empleado";
+}
+
+<h2>Insertar</h2>
+
+@using (Html.BeginForm("Insert", "Employees", FormMethod.Post))
+{
+
+    <div class="form-group">
+        Nombre: @Html.TextBoxFor(r => r.FirstName, new { @class = "form-control" })
+        Apellido: @Html.TextBoxFor(r => r.LastName, new { @class = "form-control" })
+        Ciudad: @Html.TextBoxFor(r => r.City, new { @class = "form-control" })
+        Pais: @Html.TextBoxFor(r => r.Country, new { @class = "form-control" })
+    </div>
+    <div>
+        <input type="submit" name="Guardar" value="Guardar" class="btn-primary" />
+        @Html.ActionLink("Volver", "Index", "Employees", new { @class = "btn btn-light" })
+    </div>
+}

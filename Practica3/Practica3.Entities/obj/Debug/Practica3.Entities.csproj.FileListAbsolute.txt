@@ -10,3 +10,15 @@ D:\LabNet2020\Practica3\Practica3.Entities\obj\Debug\Practica3.Entities.csproj.C
 D:\LabNet2020\Practica3\Practica3.Entities\obj\Debug\Practica3.Entities.csproj.CopyComplete
 D:\LabNet2020\Practica3\Practica3.Entities\obj\Debug\Practica3.Entities.dll
 D:\LabNet2020\Practica3\Practica3.Entities\obj\Debug\Practica3.Entities.pdb
+D:\LabNet\Practica3\Practica3.Entities\bin\Debug\Practica3.Entities.dll.config
+D:\LabNet\Practica3\Practica3.Entities\bin\Debug\Practica3.Entities.dll
+D:\LabNet\Practica3\Practica3.Entities\bin\Debug\Practica3.Entities.pdb
+D:\LabNet\Practica3\Practica3.Entities\bin\Debug\EntityFramework.dll
+D:\LabNet\Practica3\Practica3.Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\LabNet\Practica3\Practica3.Entities\bin\Debug\EntityFramework.xml
+D:\LabNet\Practica3\Practica3.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\LabNet\Practica3\Practica3.Entities\obj\Debug\Practica3.Entities.csprojAssemblyReference.cache
+D:\LabNet\Practica3\Practica3.Entities\obj\Debug\Practica3.Entities.csproj.CoreCompileInputs.cache
+D:\LabNet\Practica3\Practica3.Entities\obj\Debug\Practica3.Entities.csproj.CopyComplete
+D:\LabNet\Practica3\Practica3.Entities\obj\Debug\Practica3.Entities.dll
+D:\LabNet\Practica3\Practica3.Entities\obj\Debug\Practica3.Entities.pdb
