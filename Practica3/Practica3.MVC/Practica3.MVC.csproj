@@ -173,9 +173,11 @@
     <Content Include="Views\Employees\Index.cshtml" />
     <Content Include="Views\Employees\Insert.cshtml" />
     <Content Include="Views\Employees\Update.cshtml" />
+    <Content Include="Views\Employees\Mensajes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Error\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

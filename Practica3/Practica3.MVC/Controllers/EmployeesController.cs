@@ -30,21 +30,46 @@ namespace Practica3.MVC.Controllers
         [HttpPost]
         public ActionResult Insert(EmployeesView employees)
         {
-            var logic = new EmployeesLogic();
-            var employeeEntity = new Employees {
-                FirstName = employees.FirstName,
-                LastName = employees.LastName,
-                City = employees.City,
-                Country = employees.Country
-            };
-            
-            logic.Insert(employeeEntity);
-            return  RedirectToAction("Index");
+            try
+            {
+                var logic = new EmployeesLogic();
+                var employeeEntity = new Employees
+                {
+                    FirstName = employees.FirstName,
+                    LastName = employees.LastName,
+                    City = employees.City,
+                    Country = employees.Country
+                };
+
+                logic.Insert(employeeEntity);
+                ViewData["Message"] = "Insertado con exito!";
+                ViewBag.Validator = true;
+                return View("Mensajes");
+            }
+            catch (Exception ex) {
+                ViewData["Message"] = ex.Message;
+                ViewBag.Validator = false;
+                return View("Mensajes");
+            }
+
         }
         public ActionResult Delete(int id) {
-            var logic = new EmployeesLogic();
-            logic.Delete(id);
-            return RedirectToAction("Index");
+            try
+            {
+                var logic = new EmployeesLogic();
+                logic.Delete(id);
+                ViewData["Message"] = "Borrado con exito!";
+                ViewBag.Validator = true;
+                return View("Mensajes");
+
+            }
+            catch (Exception ex) {
+                ViewData["Message"] = ex.Message;
+                ViewBag.Validator = false;
+                return View("Mensajes");
+
+            }
+
         }
 
         public ActionResult Update(int id){
@@ -62,17 +87,29 @@ namespace Practica3.MVC.Controllers
         [HttpPost]
         public ActionResult Update(EmployeesView employees)
         {
-            var logic = new EmployeesLogic();
-            var employeeEntity = new Employees
-            {   EmployeeID = employees.Id,
-                FirstName = employees.FirstName,
-                LastName = employees.LastName,
-                City = employees.City,
-                Country = employees.Country
-            };
+            try
+            {
+                var logic = new EmployeesLogic();
+                var employeeEntity = new Employees
+                {
+                    EmployeeID = employees.Id,
+                    FirstName = employees.FirstName,
+                    LastName = employees.LastName,
+                    City = employees.City,
+                    Country = employees.Country
+                };
 
-            logic.Update(employeeEntity);
-            return RedirectToAction("Index");
+                logic.Update(employeeEntity);
+                ViewData["Message"] = "Actualizado con exito!";
+                ViewBag.Validator = true;
+                return View("Mensajes");
+            }
+            catch (Exception ex) {
+                ViewData["Message"] = ex.Message;
+                ViewBag.Validator = false;
+                return View("Mensajes");
+            }
+
         }
     }
 }

@@ -8,6 +8,7 @@
 @using (Html.BeginForm("Update", "Employees", FormMethod.Post))
 {
     <div class="form-group">
+        @Html.HiddenFor(r => r.Id)
         Nombre: @Html.TextBoxFor(r => r.FirstName, new { @class = "form-control" })
         Apellido: @Html.TextBoxFor(r => r.LastName, new { @class = "form-control" })
         Ciudad: @Html.TextBoxFor(r => r.City, new { @class = "form-control" })

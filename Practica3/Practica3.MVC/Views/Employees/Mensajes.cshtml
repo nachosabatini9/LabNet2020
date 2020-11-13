@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Error Page";
+}
+
+<h2></h2>
+
+@if (@ViewBag.Validator == true)
+{
+<div id="Msj" class="alert alert-success" role="alert">
+    @ViewData["Message"].ToString()
+    @Html.ActionLink("Volver", "Index", "Employees", new { @class = "btn btn-light" })
+</div>
+}
+else
+{
+<div class="alert alert-danger" role="alert">
+    @ViewData["Message"].ToString()
+    @Html.ActionLink("Volver", "Index", "Employees", new { @class = "btn btn-light" })
+
+</div>
+
+}
+
+

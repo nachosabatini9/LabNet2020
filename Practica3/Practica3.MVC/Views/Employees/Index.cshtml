@@ -1,11 +1,13 @@
 ﻿@model List<Practica3.MVC.Models.EmployeesView>
 
+
 @{
     ViewBag.Title = "Empleados";
 }
 
 <div>
     <h2>Lista Empleados</h2>
+
     <table class="table">
         <thead class="thead-dark">
             <tr>
@@ -14,7 +16,7 @@
                 <th scope="col">Last</th>
                 <th scope="col">City</th>
                 <th scope="col">Country</th>
-                <th scope="col">Accion</th>
+                <th scope="col">Elimina</th>
                 <th scope="col">Modificar</th>
             </tr>
         </thead>
@@ -27,13 +29,13 @@
                     <td>@employee.LastName</td>
                     <td>@employee.City</td>
                     <td>@employee.Country</td>
-                    <td>@Html.ActionLink("Eliminar","Delete",new {id = employee.Id }, new {onclick="return confirm('Esta seguro que quiere eliminar al empleado?')" })</td>
-                    <td>@Html.ActionLink("Actualizar","Update",new {id = employee.Id})</td>
+                    <td>@Html.ActionLink("Eliminar", "Delete", new { id = employee.Id }, new { onclick = "return confirm('Esta seguro que quiere eliminar al empleado?')" })</td>
+                    <td>@Html.ActionLink("Actualizar", "Update", new { id = employee.Id })</td>
                 </tr>
             }
         <tbody>
     </table>
 </div>
-<div>
-    @Html.ActionLink("Insertar", "Insert", "Employees",new {@class= "btn btn-primary" }) 
-</div>
+    <div>
+        @Html.ActionLink("Insertar", "Insert", "Employees", new { @class = "btn btn-primary" })
+    </div>
