@@ -1,0 +1,85 @@
+﻿@model Practica3.MVC.Models.PeopleView
+
+@{
+    ViewBag.Title = "Api Test";
+}
+
+<h2>Api</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Height)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mass)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HairColor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SkinColor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BirthYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HomeWorld)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Created)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Edited)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Url)
+        </th>
+        <th></th>
+    </tr>
+
+    <tr>
+        <td>
+            @Html.DisplayTextFor( m => m.Name)
+        </td>
+        <td>
+            @Html.DisplayTextFor( m => m.Height)
+        </td>
+        <td>
+            @Html.DisplayTextFor(m => m.Mass)
+        </td>
+        <td>
+            @Html.DisplayTextFor(m => m.HairColor)
+        </td>
+        <td>
+            @Html.DisplayTextFor(m => m.SkinColor)
+        </td>
+        <td>
+            @Html.DisplayTextFor(m => m.BirthYear)
+        </td>
+        <td>
+            @Html.DisplayTextFor(m => m.Gender)
+        </td>
+        <td>
+            @Html.DisplayTextFor(m => m.HomeWorld)
+        </td>
+        <td>
+            @Html.DisplayTextFor(m => m.Created)
+        </td>
+        <td>
+            @Html.DisplayTextFor(m => m.Edited)
+        </td>
+        <td>
+            @Html.DisplayTextFor(m => m.Url)
+        </td>
+
+    </tr>
+
+
+</table>

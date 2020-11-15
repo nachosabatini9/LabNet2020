@@ -12,8 +12,19 @@ namespace Practica3.Logic
     {
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Territories territorioAEliminar = GetOne(id);
+                context.Territories.Remove(territorioAEliminar);
+                context.SaveChanges();
+            }
+            catch
+            {
+                throw new CustomException("Error al eliminar Empleado");
+            }
+
         }
+    
 
         public List<Territories> GetAll()
         {
@@ -27,12 +38,31 @@ namespace Practica3.Logic
 
         public void Insert(Territories entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Territories nuevoTerritorio = context.Territories.Add(entity);
+                context.SaveChanges();
+            }
+            catch
+            {
+                throw new CustomException("Error al Crear nuevo Empleado");
+            }
         }
 
         public void Update(Territories entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Territories territoriooAEditar = GetOne(int.Parse(entity.TerritoryID));
+                territoriooAEditar.TerritoryDescription = entity.TerritoryDescription;
+                territoriooAEditar.RegionID = entity.RegionID;
+                context.SaveChanges();
+            }
+            catch
+            {
+                throw new CustomException("Error al actualizar Empleado");
+            }
+
         }
     }
 }

@@ -90,3 +90,5 @@ D:\LabNet\Practica3\Practica3.MVC\bin\Practica3.Logic.pdb
 D:\LabNet\Practica3\Practica3.MVC\bin\Practica3.Logic.dll.config
 D:\LabNet\Practica3\Practica3.MVC\bin\EntityFramework.xml
 D:\LabNet\Practica3\Practica3.MVC\bin\EntityFramework.SqlServer.xml
+D:\LabNet\Practica3\Practica3.MVC\bin\System.Net.Http.Formatting.dll
+D:\LabNet\Practica3\Practica3.MVC\bin\System.Net.Http.Formatting.xml
